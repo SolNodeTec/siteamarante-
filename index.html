@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética Studio Amarante | Clínicas de Estética Avançada & Pós-Operatório em São Paulo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#111111',
+                            charcoal: '#1A1A1A',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            golddark: '#AA7C11',
+                            muted: '#8E8E93',
+                            lightbg: '#FAF9F6',
+                            cardbg: '#222222'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Scrollbar -->
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111111;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #AA7C11;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF 30%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow:hover {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-brand-lightbg text-brand-dark font-sans selection:bg-brand-gold selection:text-brand-dark overflow-x-hidden">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-brand-dark text-brand-goldlight text-xs py-2 px-4 border-b border-brand-gold/20">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="flex items-center gap-6">
+                <span><i class="fa-solid fa-location-dot text-brand-gold mr-1.5"></i> Jardim Japão, São Paulo</span>
+                <span class="hidden md:inline text-brand-gold/40">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-clock text-brand-gold mr-1.5"></i> Atendimento com hora marcada</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:11998795833" class="hover:text-white transition"><i class="fa-solid fa-phone text-brand-gold mr-1.5"></i> (11) 99879-5833</a>
+                <a href="https://www.instagram.com/studioamarante/" target="_blank" class="hover:text-white transition text-lg"><i class="fa-brands fa-instagram text-brand-gold hover:text-brand-goldlight"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-gold/15 shadow-xl">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 lg:h-[68px] flex justify-between items-center gap-4">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2.5 group flex-shrink-0 min-w-0">
+                <img src="471575330_584111244556335_4239632922399875435_n.jpg" alt="Estética Studio Amarante" class="h-10 w-10 rounded-full border border-brand-gold object-cover shadow-md group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/100x100/1a1a1a/d4af37?text=SA'">
+                <div class="leading-none min-w-0">
+                    <h1 class="text-white font-serif font-semibold text-[15px] tracking-wide truncate group-hover:text-brand-gold transition-colors">STUDIO AMARANTE</h1>
+                    <span class="text-brand-gold/80 text-[10px] tracking-[0.2em] uppercase block mt-1">Estética Avançada</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu (compacto) -->
+            <nav class="hidden lg:flex items-center gap-6 text-[12px] font-medium text-gray-300 tracking-wide uppercase">
+                <a href="#sobre" class="hover:text-brand-gold transition-colors duration-200">Especialista</a>
+                <a href="#servicos" class="hover:text-brand-gold transition-colors duration-200">Procedimentos</a>
+                <a href="#quiz" class="text-brand-gold hover:text-brand-goldlight font-semibold transition-colors duration-200 flex items-center gap-1"><i class="fa-solid fa-wand-magic-sparkles text-[11px]"></i> Simulador</a>
+                <a href="#depoimentos" class="hover:text-brand-gold transition-colors duration-200">Avaliações</a>
+                <a href="#localizacao" class="hover:text-brand-gold transition-colors duration-200">Contato</a>
+            </nav>
+
+            <!-- Call to Action Button Header -->
+            <div class="hidden lg:flex items-center flex-shrink-0">
+                <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta+avaliativa+no+Studio+Amarante." target="_blank" class="bg-brand-gold hover:bg-brand-goldlight text-brand-dark px-4 py-2 rounded-full font-semibold text-[11px] tracking-wider uppercase shadow-sm hover:shadow-brand-gold/30 transition-all duration-300 flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Agendar</span>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-brand-gold hover:text-white p-2 focus:outline-none transition-colors" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-charcoal border-b border-brand-gold/15 py-5 px-6 space-y-3 shadow-2xl">
+            <a href="#inicio" class="block text-gray-300 hover:text-brand-gold py-2 text-sm font-semibold tracking-wide border-b border-white/5">Início</a>
+            <a href="#sobre" class="block text-gray-300 hover:text-brand-gold py-2 text-sm font-semibold tracking-wide border-b border-white/5">A Especialista</a>
+            <a href="#servicos" class="block text-gray-300 hover:text-brand-gold py-2 text-sm font-semibold tracking-wide border-b border-white/5">Procedimentos</a>
+            <a href="#diferenciais" class="block text-gray-300 hover:text-brand-gold py-2 text-sm font-semibold tracking-wide border-b border-white/5">Diferenciais</a>
+            <a href="#quiz" class="block text-brand-gold hover:text-brand-goldlight py-2 text-sm font-bold tracking-wide border-b border-white/5"><i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Simulador Estético</a>
+            <a href="#depoimentos" class="block text-gray-300 hover:text-brand-gold py-2 text-sm font-semibold tracking-wide border-b border-white/5">Avaliações</a>
+            <a href="#localizacao" class="block text-gray-300 hover:text-brand-gold py-2 text-sm font-semibold tracking-wide">Localização</a>
+            <div class="pt-3">
+                <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta+avaliativa+no+Studio+Amarante." target="_blank" class="w-full text-center bg-brand-gold hover:bg-brand-goldlight text-brand-dark font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 transition duration-300 text-sm uppercase tracking-wider">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Agendar Avaliação</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-brand-dark text-white pt-12 pb-24 md:py-32 overflow-hidden">
+        <!-- Abstract Background Glows -->
+        <div class="absolute top-1/4 right-0 w-96 h-96 bg-brand-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-brand-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Left Side Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight text-white">
+                        A poucas sessões do <br class="hidden sm:inline">
+                        <span class="gold-gradient-text">seu grande sonho</span>
+                    </h2>
+
+                    <p class="text-gray-300 text-base md:text-lg max-w-2xl leading-relaxed">
+                        Estética avançada, fisioterapia dermato-funcional e pós-operatórios de alta eficácia comandados por quem entende de ciência, saúde e bem-estar. Recupere sua autoestima e contorne suas curvas com segurança máxima.
+                    </p>
+
+                    <!-- Trust indicators bullets -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-300 pt-2">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Dermato-Funcional (+20 anos exp.)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Pós-Operatório Seguro & Científico</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Tratamentos Exclusivos de Lipedema</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Injetáveis & Bioestimuladores</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta+avaliativa+no+Studio+Amarante." target="_blank" class="bg-gradient-to-r from-brand-gold to-brand-golddark text-brand-dark px-8 py-4 rounded-full font-bold text-center tracking-wide hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-3 shadow-lg shadow-brand-gold/20">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Falar Conosco no WhatsApp</span>
+                        </a>
+                        <a href="#servicos" class="border border-white/30 hover:border-brand-gold text-white px-8 py-4 rounded-full font-bold text-center tracking-wide transition-colors duration-300 flex items-center justify-center">
+                            Ver Procedimentos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Side Visuals -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-sm sm:max-w-md">
+                        <!-- Frame Gold Backlight -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-gold to-brand-golddark rounded-[2rem] blur opacity-40 animate-pulse"></div>
+                        
+                        <!-- Main Card -->
+                        <div class="relative bg-brand-charcoal border border-brand-gold/30 rounded-[2rem] p-6 shadow-2xl overflow-hidden flex flex-col items-center">
+                            <img src="471575330_584111244556335_4239632922399875435_n.jpg" alt="Logotipo Studio Amarante" class="w-56 h-56 rounded-full border-4 border-brand-gold object-cover shadow-2xl bg-brand-dark mb-6">
+                            
+                            <!-- Highlight Box -->
+                            <div class="w-full bg-brand-dark border border-brand-gold/15 rounded-xl p-4 text-center">
+                                <h3 class="font-serif text-brand-gold text-lg font-bold mb-1">Especialidades em Foco</h3>
+                                <div class="flex flex-wrap justify-center gap-2 mt-2">
+                                    <span class="bg-brand-charcoal text-xs text-white px-2.5 py-1 rounded-full border border-brand-gold/20">Pós-Operatório</span>
+                                    <span class="bg-brand-charcoal text-xs text-white px-2.5 py-1 rounded-full border border-brand-gold/20">Lipedema</span>
+                                    <span class="bg-brand-charcoal text-xs text-white px-2.5 py-1 rounded-full border border-brand-gold/20">Diástase</span>
+                                    <span class="bg-brand-charcoal text-xs text-white px-2.5 py-1 rounded-full border border-brand-gold/20">Injetáveis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics / Social Proof Bar -->
+    <section class="bg-gradient-to-r from-brand-charcoal to-brand-dark text-white border-y border-brand-gold/20 py-8 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 gap-8 text-center max-w-xl mx-auto">
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-serif font-bold text-brand-gold">+20</div>
+                    <div class="text-xs md:text-sm text-gray-300 tracking-wider uppercase">Anos de Experiência</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-serif font-bold text-brand-gold">100%</div>
+                    <div class="text-xs md:text-sm text-gray-300 tracking-wider uppercase">Tratamento Personalizado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (A Fisioterapeuta) -->
+    <section id="sobre" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <!-- Graphic Grid -->
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -top-6 -left-6 w-80 h-80 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+                    <!-- Aesthetic Collage -->
+                    <div class="relative bg-brand-lightbg border-2 border-brand-gold/25 rounded-[2.5rem] p-5 shadow-2xl transition-transform duration-500 hover:scale-[1.01]">
+                        <img src="471575330_584111244556335_4239632922399875435_n.jpg" alt="Dra. Katia Amarante" class="w-full aspect-square object-cover rounded-3xl shadow-lg bg-brand-dark mb-5 border border-brand-gold/15">
+                        <div class="bg-brand-charcoal text-white rounded-2xl p-5 text-center border border-brand-gold/10">
+                            <h4 class="font-serif text-brand-gold text-lg font-bold mb-1">Katia Amarante</h4>
+                            <p class="text-xs text-brand-goldlight tracking-widest uppercase">Fisioterapeuta Dermato-Funcional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Presentation -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="space-y-3">
+                        <span class="text-brand-gold font-bold tracking-widest text-xs uppercase bg-brand-lightbg py-1.5 px-3 rounded-full border border-brand-gold/20 inline-block">A Especialista</span>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark leading-tight">
+                            Katia Amarante
+                        </h2>
+                        <p class="text-brand-golddark font-semibold text-lg italic">
+                            Especialista em Autoestima e Esteticista há 20 anos
+                        </p>
+                    </div>
+
+                    <div class="space-y-5 text-gray-600 leading-relaxed text-base md:text-lg">
+                        <p>
+                            Sou pós-graduada em <strong>Fisioterapia Dermato-Funcional, Ortopedia e Injetáveis</strong>, dedicando minha carreira à união precisa entre ciência médica, saúde física e bem-estar estético. 
+                        </p>
+                        <p>
+                            Minha atuação é pautada na <strong>constante evolução</strong> técnica e científica para entregar sempre o melhor resultado a cada paciente que confia em minhas mãos. Atuo também ativamente como <strong>monitora de injetáveis</strong>, auxiliando no desenvolvimento e na prática de excelência em harmonização e bioestimuladores de colágeno.
+                        </p>
+                        <p class="text-gray-700 font-medium">
+                            No Studio Amarante, reabilitar o corpo é também resgatar identidades. Cada protocolo é desenhado sob medida para valorizar sua beleza natural com segurança de nível médico e o acolhimento que você merece.
+                        </p>
+                    </div>
+
+                    <!-- Professional Bio Highlights -->
+                    <div class="border-t border-brand-gold/15 pt-8">
+                        <h4 class="font-bold text-brand-dark mb-4 flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-brand-gold"></i> Formação e Atuação de Destaque:</h4>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3.5 text-sm text-gray-600">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brand-gold mt-1 text-xs"></i>
+                                <span>Pós-graduada em Fisioterapia Dermato-Funcional</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brand-gold mt-1 text-xs"></i>
+                                <span>Pós-graduada em Fisioterapia Ortopédica</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brand-gold mt-1 text-xs"></i>
+                                <span>Pós-graduada em Procedimentos Injetáveis</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brand-gold mt-1 text-xs"></i>
+                                <span>Monitora de Cursos e Treinamentos de Injetáveis</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brand-gold mt-1 text-xs"></i>
+                                <span>Esteticista de Alta Performance há mais de 20 anos</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brand-gold mt-1 text-xs"></i>
+                                <span>Especialista focada em Devolução de Autoestima</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="#servicos" class="inline-flex items-center justify-center gap-2.5 bg-brand-charcoal hover:bg-brand-dark text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-md">
+                            <span>Conhecer Meus Procedimentos</span>
+                            <i class="fa-solid fa-arrow-right text-brand-gold"></i>
+                        </a>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1+Katia%2C+vi+sua+especializa%C3%A7%C3%A3o+no+site+e+gostaria+de+agendar+uma+consulta+avaliativa." target="_blank" class="inline-flex items-center justify-center gap-2.5 border border-brand-gold/30 hover:border-brand-gold text-brand-dark font-bold py-4 px-8 rounded-full transition duration-300">
+                            <i class="fa-brands fa-whatsapp text-brand-gold text-lg"></i>
+                            <span>Falar Diretamente Comigo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-brand-lightbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block">Menu de Tratamentos</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark">Nossas Soluções Avançadas</h2>
+                <p class="text-gray-600">Explore nossa ampla gama de procedimentos específicos para cada necessidade corporal e facial. Selecione uma categoria para visualizar.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
+                <button onclick="switchTab('pos-op')" id="btn-pos-op" class="tab-btn active bg-brand-dark text-brand-gold border-brand-gold/30 px-6 py-3 rounded-full text-sm font-semibold tracking-wide border transition duration-300">
+                    <i class="fa-solid fa-suitcase-medical mr-2"></i> Pós-Operatório & Lipedema
+                </button>
+                <button onclick="switchTab('corporal')" id="btn-corporal" class="tab-btn bg-white text-gray-700 border-gray-200 hover:border-brand-gold px-6 py-3 rounded-full text-sm font-semibold tracking-wide border transition duration-300">
+                    <i class="fa-solid fa-child mr-2"></i> Estética Corporal Avançada
+                </button>
+                <button onclick="switchTab('facial')" id="btn-facial" class="tab-btn bg-white text-gray-700 border-gray-200 hover:border-brand-gold px-6 py-3 rounded-full text-sm font-semibold tracking-wide border transition duration-300">
+                    <i class="fa-solid fa-face-smile mr-2"></i> Facial & Injetáveis
+                </button>
+            </div>
+
+            <!-- Tabs Content -->
+            <!-- TAB 1: PÓS OPERATÓRIO & LIPEDEMA -->
+            <div id="tab-pos-op" class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Pós-Operatório de Cirurgia Plástica</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Tratamento preventivo e curativo contra aderências, fibroses e edemas excessivos. Uso de drenagem cientificamente calibrada para garantir um contorno cirúrgico perfeito.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Segurança Médica</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+P%C3%B3s-Operat%C3%B3rio+de+Cirurgia+Pl%C3%A1stica." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Tratamento de Lipedema</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Cuidado especializado focado na redução da inflamação do tecido adiposo, alívio de dores, peso nas pernas e melhora expressiva da circulação através de protocolos combinados.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Protocolo Clínico</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Tratamento+de+Lipedema." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-arrows-to-circle"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Diástase Abdominal</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Recuperação ativa da musculatura abdominal enfraquecida no pós-gestacional ou variação rápida de peso sem a necessidade de intervenção cirúrgica invasiva.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Recuperação Física</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Tratamento+para+Di%C3%A1stase+Abdominal." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-person-breastfeeding"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Drenagem em Gestante</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Fórmula ultraleve e específica que estimula o fluxo linfático das mamães, combatendo severamente a retenção hídrica nos membros inferiores com total segurança para o bebê.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Acolhimento Materno</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+Drenagem+linf%C3%A1tica+em+Gestante." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-hands-holding"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Drenagem Linfática Padrão</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Manipulação profissional que remove fluidos retidos nos tecidos intercelulares, auxiliando o sistema linfático a eliminar as toxinas metabólicas naturais do organismo.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Bem-Estar Geral</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+Drenagem+Linf%C3%A1tica." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Pós-Operatório de Eficácia</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Drenagens com ultrassom, manobras terapêuticas de prevenção de fibrose de alta eficácia e taping compressivo para cicatrização perfeitamente alinhada.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Tecnologia Aplicada</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+P%C3%B3s-Operat%C3%B3rio+de+Efic%C3%A1cia." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: ESTÉTICA CORPORAL AVANÇADA -->
+            <div id="tab-corporal" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Bumbum Perfect</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Associação exclusiva de bioestimuladores de colágeno, vacuoterapia e ativos volumizadores para tratar flacidez, celulites e modelar a projeção dos glúteos.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Destaque Corporal</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Bumbum+Perfect." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Corrente Russa / Abdômen Trincado</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Eletroestimulação muscular profunda de média frequência para melhorar a firmeza, tônus muscular e definir contornos abdominais e de coxas com rapidez.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Fortalecimento</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+Corrente+Russa+ou+Abd%C3%B4men+Trincado." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-droplet-slash"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Hidrolipoclasia Não Aspirativa</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Método inovador que combina injeção de soro fisiológico estéril à aplicação de ultrassom focado para romper as células de gordura localizada com eliminação natural.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Gordura Localizada</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+Hidrolipoclasia+N%C3%A3o+Aspirativa." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Tratamento de Estrias</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Técnicas que induzem a produção natural de novos feixes de colágeno e elastina, atenuando significativamente a profundidade e coloração das estrias brancas e vermelhas.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Textura e Pele</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Tratamento+de+Estrias." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Radiofrequência</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Aquecimento térmico controlado da derme profunda para contração imediata do colágeno e tratamento vigoroso contra a flacidez cutânea em pernas, braços e glúteos.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Tecnologia Térmica</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+Radiofrequ%C3%AAncia." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Massagem para Dor & Ventosaterapia</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Abordagem de reabilitação muscular que desfaz pontos de gatilho e tensões severas através de sucção controlada para oxigenação profunda dos tecidos.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Terapias Manuais</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+Massagem+para+dor+e+Ventosaterapia." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: FACIAL & INJETÁVEIS -->
+            <div id="tab-facial" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-syringe"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Bioestimuladores de Colágeno</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Aplicação profunda de substâncias biocompatíveis que estimulam as células fibroblastos a produzirem uma densa malha de colágeno, revertendo a flacidez estrutural.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Especialista Injetáveis</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+Bioestimuladores+de+Col%C3%A1geno." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Microagulhamento Avançado</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Drug delivery de alta performance associado a microperfurações estéreis na pele, excelente para atenuar cicatrizes de acne, poros dilatados e melasmas profundos.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Indução de Colágeno</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Microagulhamento." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Preenchedores Faciais</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Correção suave de assimetrias faciais, reposicionamento de coxins de gordura, tratamento do bigode chinês e olheiras profundas com ácido hialurônico de alta pureza.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Harmonização Inteligente</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+Preenchedores+Faciais." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Peeling Químico</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Renovação epidérmica profunda que promove descamação fina e controlada para clareamento de manchas, melhora das linhas de expressão e maciez facial incomparável.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Renovação Facial</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Peeling+Qu%C3%ADmico." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-soap"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Limpeza de Pele Profunda</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Extração criteriosa de comedões e impurezas com vapor de ozônio, alta frequência desinfetante e máscara calmante nutritiva personalizada para seu fototipo.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Facial Feliz</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+Limpeza+de+Pele." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-xl">
+                            <i class="fa-solid fa-wand-magic"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-brand-dark">Método STUDIOKa</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Protocolo autoral premium que unifica revitalização celular profunda e relaxamento muscular facial extremo. Devolva a luminosidade e o vigor natural à sua pele.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-brand-gold uppercase">Assinatura Amarante</span>
+                        <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+M%C3%A9todo+STUDIOKa." target="_blank" class="text-brand-dark hover:text-brand-gold font-bold text-sm flex items-center gap-1 transition">Saber Mais <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Differentials Section -->
+    <section id="diferenciais" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-charcoal opacity-40"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block">Critérios de Rigor</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Por que escolher o Studio Amarante?</h2>
+                <p class="text-gray-300">Oferecemos uma estrutura projetada de forma inteligente para acolher você e garantir segurança clínica completa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Differential 1 -->
+                <div class="bg-brand-charcoal border border-brand-gold/15 p-8 rounded-3xl space-y-4 hover:border-brand-gold/50 transition duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-2xl">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold">Respaldo Técnico Científico</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Procedimentos realizados com conhecimento de base acadêmica em fisioterapia. Tratamentos seguros e cientificamente validados com zero improvisação.
+                    </p>
+                </div>
+
+                <!-- Differential 2 -->
+                <div class="bg-brand-charcoal border border-brand-gold/15 p-8 rounded-3xl space-y-4 hover:border-brand-gold/50 transition duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-2xl">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold">Biossegurança Avançada</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Protocolos rigorosos de desinfecção, materiais estéreis de uso único e ambiente clínico planejado sob as diretrizes de vigilância sanitária nacional.
+                    </p>
+                </div>
+
+                <!-- Differential 3 -->
+                <div class="bg-brand-charcoal border border-brand-gold/15 p-8 rounded-3xl space-y-4 hover:border-brand-gold/50 transition duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold text-2xl">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold">Ambiente de Luxo Acolhedor</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Local confortável e de fácil acesso para lhe acolher e proporcionar uma experiência relaxante de alto padrão enquanto você remodela seu corpo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz / Procedure Finder -->
+    <section id="quiz" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brand-lightbg border-2 border-brand-gold/20 rounded-[2.5rem] p-8 md:p-12 shadow-xl">
+                <div class="text-center max-w-2xl mx-auto mb-8 space-y-2">
+                    <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block">Simulador Interativo</span>
+                    <h3 class="text-2xl md:text-3xl font-serif font-bold text-brand-dark">Descubra o Tratamento Perfeito</h3>
+                    <p class="text-gray-600 text-sm">Responda a 3 perguntas simples e nosso sistema inteligente irá sugerir a melhor abordagem para o seu caso!</p>
+                </div>
+
+                <!-- Quiz Box -->
+                <div id="quiz-container" class="space-y-6">
+                    <!-- Step 1 -->
+                    <div id="step-1" class="quiz-step space-y-4">
+                        <span class="text-brand-gold font-bold text-xs uppercase tracking-wider block">Passo 1 de 3</span>
+                        <h4 class="text-lg font-bold text-brand-dark">Qual é a sua principal queixa ou objetivo atualmente?</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <button onclick="selectOption(1, 'Pós-Operatório / Cicatrização')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                <i class="fa-solid fa-notes-medical text-brand-gold mr-2"></i> Pós-Operatório / Cicatrização
+                            </button>
+                            <button onclick="selectOption(1, 'Inchaço, Dores nas Pernas ou Lipedema')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                <i class="fa-solid fa-droplet text-brand-gold mr-2"></i> Retenção de Líquido / Lipedema
+                            </button>
+                            <button onclick="selectOption(1, 'Gordura Localizada ou Celulite')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                <i class="fa-solid fa-compress text-brand-gold mr-2"></i> Gordura Localizada / Celulite
+                            </button>
+                            <button onclick="selectOption(1, 'Flacidez de Pele ou Rejuvenescimento')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                <i class="fa-solid fa-sparkles text-brand-gold mr-2"></i> Flacidez Corporal ou Facial
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 (Hidden Initially) -->
+                    <div id="step-2" class="quiz-step hidden space-y-4">
+                        <span class="text-brand-gold font-bold text-xs uppercase tracking-wider block">Passo 2 de 3</span>
+                        <h4 class="text-lg font-bold text-brand-dark">Qual é o nível de urgência do tratamento?</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <button onclick="selectOption(2, 'Urgente (Recém-operada ou com incômodo intenso)')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Urgente (Recém-operada ou dor)
+                            </button>
+                            <button onclick="selectOption(2, 'Prevenção / Quero me preparar com antecedência')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Prevenção / Preparação
+                            </button>
+                            <button onclick="selectOption(2, 'Moderado (Quero iniciar nas próximas semanas)')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Nas próximas semanas
+                            </button>
+                            <button onclick="selectOption(2, 'Longo Prazo (Planejando cuidados contínuos)')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Cuidados de rotina
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 (Hidden Initially) -->
+                    <div id="step-3" class="quiz-step hidden space-y-4">
+                        <span class="text-brand-gold font-bold text-xs uppercase tracking-wider block">Passo 3 de 3</span>
+                        <h4 class="text-lg font-bold text-brand-dark">Deseja um plano focado em procedimentos manuais ou alta tecnologia associada?</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <button onclick="selectOption(3, 'Procedimentos Manuais (Drenagem, Massagem)')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Predominantemente Manuais
+                            </button>
+                            <button onclick="selectOption(3, 'Alta Tecnologia (Aparelhos, Ultrassom, Radiofrequência)')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Aparelhos & Tecnologia Avançada
+                            </button>
+                            <button onclick="selectOption(3, 'Tratamentos Injetáveis (Bioestimuladores, Hidrolipo)')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Minimamente Invasivos & Injetáveis
+                            </button>
+                            <button onclick="selectOption(3, 'Abordagem Híbrida Personalizada (Recomendada)')" class="option-btn border border-gray-200 bg-white hover:border-brand-gold py-3 px-5 rounded-2xl text-left text-sm font-medium transition duration-200">
+                                Protocolo Sob Medida (Recomendado)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Result Panel (Hidden Initially) -->
+                    <div id="quiz-result" class="hidden space-y-6 text-center animate-fade-in">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-gold/10 text-brand-gold text-3xl mb-4">
+                            <i class="fa-solid fa-sparkles"></i>
+                        </div>
+                        <h4 class="text-2xl font-serif font-bold text-brand-dark">Temos uma recomendação para você!</h4>
+                        
+                        <div class="bg-white border border-brand-gold/30 rounded-2xl p-6 text-left max-w-md mx-auto space-y-3">
+                            <p class="text-xs uppercase tracking-wider text-brand-gold font-bold">Pré-Diagnóstico Estimado</p>
+                            <div class="space-y-1">
+                                <p class="text-sm text-gray-500">Seu Objetivo Principal:</p>
+                                <p id="result-obj" class="text-base font-bold text-brand-dark"></p>
+                            </div>
+                            <div class="space-y-1">
+                                <p class="text-sm text-gray-500">Seu Protocolo Sugerido:</p>
+                                <p id="result-protocol" class="text-base font-bold text-brand-gold"></p>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm max-w-md mx-auto">Para validar cientificamente este diagnóstico, fale diretamente com a nossa especialista agora no WhatsApp para agendar sua consulta avaliativa presencial.</p>
+
+                        <div class="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
+                            <a id="quiz-whatsapp-link" href="" target="_blank" class="bg-brand-gold hover:bg-brand-golddark text-brand-dark px-8 py-3.5 rounded-full font-bold inline-flex items-center justify-center gap-2 transition duration-300">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Reivindicar Minha Avaliação</span>
+                            </a>
+                            <button onclick="resetQuiz()" class="border border-gray-300 hover:border-brand-gold text-brand-dark px-6 py-3.5 rounded-full font-bold text-sm transition">
+                                Refazer Perguntas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Testimonials Section -->
+    <section id="depoimentos" class="py-20 bg-brand-lightbg border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block">Opinião de Quem Importa</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark">Depoimentos de Clientes Satisfeitos</h2>
+                <!-- Google rating details -->
+                <div class="flex items-center justify-center gap-3 bg-white py-2 px-6 rounded-full w-fit mx-auto shadow-sm border border-brand-gold/10">
+                    <img src="https://placehold.co/40x40/000000/ffffff?text=G" alt="Google" class="w-5 h-5 object-contain" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 fill=%22%234285F4%22 class=%22bi bi-google%22 viewBox=%220 0 16 16%22><path d=%22M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h-.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0c2.158 0 3.987.79 5.4 2.072l-2.22 2.224C10.316 3.447 9.24 3 8 3c-2.76 0-5 2.24-5 5s2.24 5 5 5c3.203 0 4.38-2.292 4.577-3.444H8V6.558h7.545z%22/></svg>'">
+                    <span class="font-bold text-sm">Google <span id="google-rating-value-2">—</span></span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-3xl space-y-4 shadow-sm relative">
+                    <div class="flex text-brand-gold text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">
+                        "Estive no Studio Amarante para tratar o meu pós-operatório de abdominoplastia e foi a melhor escolha que fiz. A doutora tem um cuidado absurdo e uma sensibilidade maravilhosa nas mãos. Não senti dor e a recuperação foi muito mais rápida do que meu cirurgião previu."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/10 text-brand-dark flex items-center justify-center font-bold">MT</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-dark">Mariana Torres</h4>
+                            <span class="text-xs text-gray-400">Cliente há 3 meses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-3xl space-y-4 shadow-sm relative">
+                    <div class="flex text-brand-gold text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">
+                        "Trato meu lipedema com ela e é o único lugar que me trouxe alívio verdadeiro nas dores e no inchaço. Ela sabe perfeitamente o que está fazendo, estuda muito e me ensinou a controlar os sintomas no dia a dia. Uma profissional brilhante com mais de 20 anos de bagagem!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/10 text-brand-dark flex items-center justify-center font-bold">AC</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-dark">Ana Clara Santos</h4>
+                            <span class="text-xs text-gray-400">Cliente há 1 ano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-3xl space-y-4 shadow-sm relative">
+                    <div class="flex text-brand-gold text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">
+                        "O procedimento Bumbum Perfect mudou completamente minha autoestima para o verão. A combinação com os bioestimuladores eliminou minha flacidez. Indico de olhos fechados. O ambiente é super limpo, cheiroso e o atendimento é vip do início ao fim."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/10 text-brand-dark flex items-center justify-center font-bold">JS</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-dark">Juliana Silva</h4>
+                            <span class="text-xs text-gray-400">Cliente há 6 meses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="localizacao" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Physical Details Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block">Fácil de Chegar</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark">Onde Estamos Localizadas</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Nossa clínica física está sediada em um local estratégico e seguro de São Paulo, no bairro Jardim Japão, bem ao lado da Praça Tóquio e com excelentes opções de estacionamento.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Endereço Completo:</h4>
+                                <p class="text-sm text-gray-600">
+                                    Ao lado do nº 2170 da Av. das Cerejeiras,<br>
+                                    Praça Tóquio, 02 - Jardim Japão<br>
+                                    São Paulo - SP, CEP: 02132-150
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Fale Conosco:</h4>
+                                <p class="text-sm text-gray-600">Telefone/WhatsApp: (11) 99879-5833</p>
+                                <p class="text-sm text-gray-600">Instagram: @studioamarante</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Horário de Atendimento:</h4>
+                                <p class="text-sm text-gray-600">Segunda a Sexta: 08h às 20h</p>
+                                <p class="text-sm text-gray-600">Sábados: 08h às 14h (com agendamento)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Route Button -->
+                    <div class="pt-4">
+                        <a href="https://maps.google.com/?q=Praca+tokio,+Av.+das+Cerejeiras,+02+-+Jardim+Japao,+Sao+Paulo+-+SP,+02132-150" target="_blank" class="bg-brand-charcoal hover:bg-brand-dark text-white font-bold py-3 px-6 rounded-full inline-flex items-center gap-2 transition duration-300">
+                            <i class="fa-solid fa-route text-brand-gold"></i>
+                            <span>Traçar Rota no Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive / Visual Map representation -->
+                <div class="lg:col-span-7">
+                    <div class="w-full h-96 rounded-[2.5rem] overflow-hidden border-2 border-brand-gold/20 shadow-2xl relative bg-brand-lightbg">
+                        <!-- Simulated/Styled Embed Map visual overlay -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.508581781297!2d-46.57945032467191!3d-23.49619187884218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef569a9b13cd3%3A0x6b8207f23c7217db!2sAv.%20das%20Cerejeiras%2C%202%20-%20Jardim%20Japao%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002132-150!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="absolute inset-0 w-full h-full">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-brand-lightbg border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block">Esclarecimentos Rápidos</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark">Dúvidas Frequentes</h2>
+                <p class="text-gray-600">Ficou com alguma dúvida sobre nossos tratamentos? Veja as perguntas frequentes de nossas pacientes.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full text-left py-5 px-6 font-bold text-brand-dark flex justify-between items-center hover:bg-gray-50 transition">
+                        <span>A partir de quantos dias após a cirurgia posso iniciar as sessões de pós-operatório?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-5 text-sm text-gray-600 leading-relaxed">
+                        Isso varia dependendo do tipo de cirurgia e da autorização expressa do seu cirurgião plástico. Em geral, procedimentos leves ou drenagem linfática ultrassuave podem ser iniciados entre o 3º e o 7º dia pós-operatório para auxiliar no controle de edemas iniciais, sempre respeitando o limite biológico e as orientações médicas.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full text-left py-5 px-6 font-bold text-brand-dark flex justify-between items-center hover:bg-gray-50 transition">
+                        <span>O que é o Lipedema e qual o papel do fisioterapeuta dermato-funcional nele?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-5 text-sm text-gray-600 leading-relaxed">
+                        O Lipedema é uma doença crônica caracterizada pelo acúmulo desproporcional de gordura dolorosa, principalmente nos membros inferiores. O fisioterapeuta dermato-funcional atua aplicando terapias descongestivas complexas, drenagens especiais e tecnologias que minimizam a inflamação, diminuindo as dores severas e promovendo mobilidade e qualidade de vida.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full text-left py-5 px-6 font-bold text-brand-dark flex justify-between items-center hover:bg-gray-50 transition">
+                        <span>Os procedimentos injetáveis são seguros no Studio Amarante?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-5 text-sm text-gray-600 leading-relaxed">
+                        Sim, absolutamente seguros! Por sermos formados e especializados em Fisioterapia Dermato-Funcional, temos a autorização e capacitação técnica avançada de órgãos reguladores para a realização de procedimentos minimamente invasivos de injetáveis, usando sempre marcas consagradas no mercado mundial.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full text-left py-5 px-6 font-bold text-brand-dark flex justify-between items-center hover:bg-gray-50 transition">
+                        <span>Como posso agendar minha consulta avaliativa?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-5 text-sm text-gray-600 leading-relaxed">
+                        É muito fácil! Basta clicar em qualquer botão do WhatsApp espalhado pelo site. Você será direcionado para um chat exclusivo onde colheremos algumas informações preliminares para agendar o melhor dia e horário na nossa clínica física no Jardim Japão.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-brand-dark text-white border-t border-brand-gold/20 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <!-- Footer Col 1: About & Brand -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="471575330_584111244556335_4239632922399875435_n.jpg" alt="Logo Studio Amarante" class="h-12 w-12 rounded-full border border-brand-gold object-cover" onerror="this.src='https://placehold.co/100x100/1a1a1a/d4af37?text=SA'">
+                    <div>
+                        <h2 class="text-base font-serif font-bold tracking-wider text-white">STUDIO AMARANTE</h2>
+                        <span class="text-brand-gold text-xs block uppercase">Estética Avançada</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Especialistas em Fisioterapia Dermato-Funcional, Reabilitação Pós-Operatória de Alta Eficácia e controle avançado de Lipedema. Unindo beleza, ciência e saúde.
+                </p>
+                <div class="flex items-center gap-3 text-lg">
+                    <a href="https://www.instagram.com/studioamarante/" target="_blank" class="w-8 h-8 rounded-full bg-brand-charcoal text-brand-gold hover:bg-brand-gold hover:text-brand-dark flex items-center justify-center transition duration-300"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5511998795833" target="_blank" class="w-8 h-8 rounded-full bg-brand-charcoal text-brand-gold hover:bg-brand-gold hover:text-brand-dark flex items-center justify-center transition duration-300"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Col 2: Useful Links -->
+            <div class="space-y-4">
+                <h4 class="font-serif font-semibold text-brand-gold border-b border-brand-gold/10 pb-2">Procedimentos</h4>
+                <ul class="text-sm text-gray-400 space-y-2">
+                    <li><a href="#servicos" onclick="switchTab('pos-op')" class="hover:text-brand-gold transition">Pós-Operatório Integrado</a></li>
+                    <li><a href="#servicos" onclick="switchTab('pos-op')" class="hover:text-brand-gold transition">Tratamentos de Lipedema</a></li>
+                    <li><a href="#servicos" onclick="switchTab('corporal')" class="hover:text-brand-gold transition">Remodelação Bumbum Perfect</a></li>
+                    <li><a href="#servicos" onclick="switchTab('corporal')" class="hover:text-brand-gold transition">Diástase Abdominal Ativa</a></li>
+                    <li><a href="#servicos" onclick="switchTab('facial')" class="hover:text-brand-gold transition">Bioestimuladores & Injetáveis</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 3: Navigation -->
+            <div class="space-y-4">
+                <h4 class="font-serif font-semibold text-brand-gold border-b border-brand-gold/10 pb-2">Navegação</h4>
+                <ul class="text-sm text-gray-400 space-y-2">
+                    <li><a href="#inicio" class="hover:text-brand-gold transition">Início</a></li>
+                    <li><a href="#sobre" class="hover:text-brand-gold transition">Sobre a Especialista</a></li>
+                    <li><a href="#diferenciais" class="hover:text-brand-gold transition">Nossos Diferenciais</a></li>
+                    <li><a href="#quiz" class="hover:text-brand-gold transition">Simulador Estético</a></li>
+                    <li><a href="#localizacao" class="hover:text-brand-gold transition">Localização e Rotas</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 4: Legal & Security -->
+            <div class="space-y-4">
+                <h4 class="font-serif font-semibold text-brand-gold border-b border-brand-gold/10 pb-2">Segurança Técnica</h4>
+                <div class="bg-brand-charcoal p-4 rounded-2xl border border-brand-gold/10 space-y-2 text-xs text-gray-400">
+                    <p class="font-bold text-white"><i class="fa-solid fa-graduation-cap text-brand-gold mr-1"></i> Formação Especializada:</p>
+                    <p>Fisioterapeuta Dermato-Funcional com habilitação para injetáveis, pós-operatório de alta eficácia e lipedema.</p>
+                    <p class="pt-2 border-t border-brand-gold/10"><i class="fa-solid fa-award text-brand-gold mr-1"></i> CREFITO Resguardado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-gold/10 pt-8 text-center text-xs text-gray-500 space-y-2">
+            <p>© 2026 Estética Studio Amarante. Todos os direitos reservados.</p>
+            <p>Desenvolvido com foco científico em alta conversão e biossegurança estética.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511998795833?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta+avaliativa+no+Studio+Amarante." target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition duration-300 group" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-14 bg-brand-dark text-brand-goldlight text-xs font-bold py-1 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap shadow-md border border-brand-gold/20">Falar com Especialista</span>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on anchor click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Tab Switcher for Services
+        function switchTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // Show target tab content
+            document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+
+            // Toggle active classes on buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-dark', 'text-brand-gold', 'border-brand-gold/30', 'active');
+                btn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
+            });
+
+            const activeBtn = document.getElementById(`btn-${tabId}`);
+            activeBtn.classList.remove('bg-white', 'text-gray-700', 'border-gray-200');
+            activeBtn.classList.add('bg-brand-dark', 'text-brand-gold', 'border-brand-gold/30', 'active');
+        }
+
+        // FAQ Toggle
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Interactive Quiz Logic
+        const quizAnswers = {
+            objective: '',
+            urgency: '',
+            preference: ''
+        };
+
+        function selectOption(step, value) {
+            if (step === 1) {
+                quizAnswers.objective = value;
+                document.getElementById('step-1').classList.add('hidden');
+                document.getElementById('step-2').classList.remove('hidden');
+            } else if (step === 2) {
+                quizAnswers.urgency = value;
+                document.getElementById('step-2').classList.add('hidden');
+                document.getElementById('step-3').classList.remove('hidden');
+            } else if (step === 3) {
+                quizAnswers.preference = value;
+                document.getElementById('step-3').classList.add('hidden');
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            const resultBox = document.getElementById('quiz-result');
+            const resultObjText = document.getElementById('result-obj');
+            const resultProtocolText = document.getElementById('result-protocol');
+            const waLink = document.getElementById('quiz-whatsapp-link');
+
+            resultObjText.innerText = quizAnswers.objective;
+
+            // Simple rules engine to suggest perfect service
+            let recommendedProtocol = '';
+            if (quizAnswers.objective.includes('Pós-Operatório')) {
+                recommendedProtocol = 'Protocolo Especializado de Pós-Operatório de Cirurgia Plástica Recalibrado';
+            } else if (quizAnswers.objective.includes('Lipedema')) {
+                recommendedProtocol = 'Protocolo Clínico de Drenagem e Alívio do Lipedema e Dor';
+            } else if (quizAnswers.objective.includes('Gordura')) {
+                recommendedProtocol = 'Plano de Hidrolipoclasia Não Aspirativa + Bumbum Perfect';
+            } else {
+                recommendedProtocol = 'Bioestimulador Regenerador de Colágeno + Peeling Método STUDIOKa';
+            }
+
+            resultProtocolText.innerText = recommendedProtocol;
+
+            // Generate WhatsApp customized message
+            const customMsg = `Olá! Realizei o simulador estético inteligente do site. Meus resultados foram: Objetivo: ${quizAnswers.objective} | Urgência: ${quizAnswers.urgency} | Tipo de Tratamento: ${quizAnswers.preference}. Gostaria de agendar uma consulta avaliativa no Jardim Japão!`;
+            waLink.href = `https://wa.me/5511998795833?text=${encodeURIComponent(customMsg)}`;
+
+            resultBox.classList.remove('hidden');
+        }
+
+        function resetQuiz() {
+            quizAnswers.objective = '';
+            quizAnswers.urgency = '';
+            quizAnswers.preference = '';
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('step-1').classList.remove('hidden');
+        }
+    </script>
+
+    <!-- ============================================================
+         GOOGLE REVIEWS EM TEMPO REAL
+         ------------------------------------------------------------
+         Preencha GOOGLE_PLACES_API_KEY e GOOGLE_PLACE_ID abaixo.
+         - API Key: https://console.cloud.google.com/ (ative "Places API (New)")
+           e restrinja por HTTP Referrer ao seu domínio.
+         - Place ID do Studio Amarante: pesquise em
+           https://developers.google.com/maps/documentation/places/web-service/place-id
+         Enquanto os valores estiverem em branco, os campos ficam com "—".
+         ============================================================ -->
+    <script>
+        const GOOGLE_PLACES_API_KEY = ""; // <-- cole sua API key aqui
+        const GOOGLE_PLACE_ID = "";       // <-- cole o Place ID aqui
+
+        function setText(id, value) {
+            const el = document.getElementById(id);
+            if (el) el.textContent = value;
+        }
+
+        async function loadGoogleRating() {
+            if (!GOOGLE_PLACES_API_KEY || !GOOGLE_PLACE_ID) return;
+            try {
+                const res = await fetch(
+                    `https://places.googleapis.com/v1/places/${GOOGLE_PLACE_ID}` +
+                    `?fields=rating,userRatingCount,googleMapsUri`,
+                    { headers: { "X-Goog-Api-Key": GOOGLE_PLACES_API_KEY } }
+                );
+                if (!res.ok) throw new Error("Places API " + res.status);
+                const data = await res.json();
+                const rating = (data.rating ?? 0).toFixed(1);
+
+                setText("google-rating-value-2", rating);
+            } catch (e) {
+                console.warn("Falha ao buscar avaliações do Google:", e);
+            }
+        }
+
+        loadGoogleRating();
+    </script>
+</body>
+</html>

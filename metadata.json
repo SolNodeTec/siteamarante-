@@ -1,0 +1,6 @@
+{
+  "name": "Studio Amarante - Estética Avançada",
+  "description": "Site institucional e landing page de alta sofisticação para o Studio Amarante e Dra. Katia Amarante.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
